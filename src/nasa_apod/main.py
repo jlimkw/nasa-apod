@@ -72,7 +72,7 @@ def get_images(days: int = 5):
 
 
 def display_results(results: list[APODResult]):
-    console = Console()
+    console = Console(force_terminal=True)
     for result in results:
         if result.media_type == MediaType.IMAGE:
             console.print(f"[link={result.url}]{result.title}[/link]")
