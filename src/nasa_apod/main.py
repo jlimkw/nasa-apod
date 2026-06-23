@@ -75,7 +75,7 @@ def display_results(results: list[APODResult]):
     console = Console(force_terminal=True)
     for result in results:
         if result.media_type == MediaType.IMAGE:
-            console.print(f"[link={result.url}]{result.title}[/link]")
+            console.print(f"[link={result.url}]{result.title}[/link]", highlight=False)
 
 
 def run():
