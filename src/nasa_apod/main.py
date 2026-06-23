@@ -78,5 +78,9 @@ def display_results(results: list[APODResult]):
             console.print(f"[link={result.url}]{result.title}[/link]")
 
 
-if __name__ == "__main__":
+def run():
     tool()
+
+
+if __name__ == "__main__":
+    run()

@@ -13,7 +13,7 @@ dependencies = [
 ]
 
 [project.scripts]
-nasa-apod = "nasa_apod:main"
+nasa-apod = "nasa_apod:main:run"
 
 [build-system]
 requires = ["uv_build>=0.11.16,<0.12.0"]
